@@ -84,13 +84,112 @@ const todos = [
         completed: false
     },
     {
-        id: 3,
+        id: 4,
         text: "meet with the boss",
         completed: false
     }
 ];
+//for loops in arrays
+for (let todo of todos){
+    console.log(todo.id);
+}
 console.log(todos);
 const todosJson = JSON.stringify(todos);
 console.log(todosJson);
 //for loop
+for (let i=0; i<=10; i++){
+    console.log (`For loop number:${i}`);
+}
+//while loop
+let n= 5;
+let sum =0;
+let i=1;
+while(i<=n){
+    sum+=i;
+    i++;
+    console.log("The sum of numbers from 1 to "+n+" is "+sum);
+}
+ //if else
+ let Age =50;
+ if (Age <=18){
+    console.log("you are a minor");
+ }else {
+    console.log("you are an adult");
+ }
+//tunary opertor
+ let v = 55;
+ const Color = v>20 ? "green":"Blue";
+ console.log(Color);
+ //switch
+ const grade = "A";
+ switch(grade) {
+    case "A" :
+    console.log('A'); 
+    break;
+    case "B":
+        console.log('B');
+        break;
+        case "C":
+        console.log('C');
+        break;
+        default:
+            console.log('D');
+            break;
+ }
+ //switch
+ const day = "WEDNESDAY";
+ switch(day){
+    case "MONDAY":
+        console.log("Today is MONDAY");
+        break;
+        case "TUESDAY":
+            console.log("Today is TUESDAY");
+            break;
+            case "WEDNESDAY":
+            console.log("Today is WEDNESDAY");
+            break;
+            case "THURSDAY":
+            console.log("Today is THURSDAY");
+            break;
+            case "FRIDAY":
+            console.log("Today is FRIDAY");
+            break;
+            case "SATURDAY":
+            console.log("Today is SATURDAY");
+            break;
+            case "SUNDAY":
+            console.log("Today is SUNDAY");
+            break;
+            default:
+            console.log("Invalid day");
+            break;
+ }
+ //FUNCTIONS
+function add (num1,num2,num3){
+    console.log(num1+num2+num3);   
+}
+add(5,6,55);
+function sub(num1,num2){
+    console.log(num1-num2);
+}
+sub(55,10);
+function multi(num1,num2){
+    console.log(num1*num2);
+}
+multi(2,12);
+//function
+let num1= 10;
+let num2=12;
+ function div(num1,num2){
+    if(num2!=0){
+        console.log(num1/num2);
+    }else{
+        console.log("Cannot divide by zero");
+    }
+}
+//oop
+
+ 
+
+
 
